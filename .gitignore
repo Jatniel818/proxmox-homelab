@@ -1,0 +1,45 @@
+# Secrets and local overrides
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*credentials*
+*secrets*
+*known_hosts*
+
+# Recovery images, database dumps, and personal artifacts
+*.img
+*.qcow2
+*.raw
+*.vmdk
+*.vhd*
+*.e2undo
+*.sql
+*.sql.gz
+*.dump
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.docx
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.JPG
+*.PNG
+*.log
+backups/
+private/
+work/
+outputs/
+
+# Local system and Python files
+.DS_Store
+__pycache__/
+*.pyc

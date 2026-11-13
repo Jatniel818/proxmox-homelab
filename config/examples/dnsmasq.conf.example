@@ -1,0 +1,13 @@
+# Reference subnet and locally administered placeholder MAC addresses.
+interface=vmbr0
+except-interface=lo
+bind-dynamic
+domain-needed
+bogus-priv
+dhcp-authoritative
+dhcp-range=192.168.50.20,192.168.50.80,255.255.255.0,12h
+dhcp-option=3,192.168.50.1
+dhcp-option=6,192.168.50.1
+dhcp-host=02:00:00:00:00:01,192.168.50.32,cloud-server,infinite
+dhcp-host=02:00:00:00:00:02,192.168.50.6,ai-server,infinite
+dhcp-leasefile=/var/lib/misc/homelab-dnsmasq.leases

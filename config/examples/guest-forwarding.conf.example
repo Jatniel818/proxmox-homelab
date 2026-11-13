@@ -1,0 +1,2 @@
+# Enable only after reviewing the host and guest firewall design.
+net.ipv4.ip_forward=1

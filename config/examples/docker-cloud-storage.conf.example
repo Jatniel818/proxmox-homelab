@@ -1,0 +1,6 @@
+# Example guest override: /etc/systemd/system/docker.service.d/cloud-storage.conf
+[Unit]
+RequiresMountsFor=/mnt/cloud
+
+[Service]
+ExecStartPre=/usr/bin/mountpoint -q /mnt/cloud
